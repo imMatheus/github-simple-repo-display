@@ -2,8 +2,6 @@ async function getData() {
     const response = await fetch('https://api.github.com/users/mojombo/repos')
     const data = await response.json()
 
-    console.log(data)
-
     const repoList = document.getElementById('repo-list')
 
     const h1 = document.querySelector('h1')
@@ -21,3 +19,5 @@ async function getData() {
     }
 }
 getData()
+
+//star for star?
